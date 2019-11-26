@@ -1,0 +1,11 @@
+version: '2'
+services:
+  banksystem-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/BankSystem/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=BankSystem
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
